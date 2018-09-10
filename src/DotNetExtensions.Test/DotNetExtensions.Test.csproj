@@ -64,6 +64,7 @@
     <Compile Include="System\Collections\Generic\EnumerableExtensions_Concat_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ElseEmpty_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ForEach_Tests.cs" />
+    <Compile Include="System\ObjectExtensions_In_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_Shuffle_Tests.cs" />
     <Compile Include="System\NullExtensions_Else_Tests.cs" />
     <Compile Include="System\NullExtensions_IfNotNullThenDo_Tests.cs" />
