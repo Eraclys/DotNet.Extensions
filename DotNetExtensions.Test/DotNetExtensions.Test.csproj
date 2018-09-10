@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumerableExtensions_Shuffle_Tests.cs" />
+    <Compile Include="NullExtensions_Else_Tests.cs" />
     <Compile Include="NullExtensions_IfNotNullThenDo_Tests.cs" />
     <Compile Include="NullExtensions_IfNotNull_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
