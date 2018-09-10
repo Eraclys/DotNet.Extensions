@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using DotNetExtensions.System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace DotNetExtensions.Test
+namespace DotNetExtensions.Test.System.Collections.Generic
 {
     [TestFixture]
     internal sealed class EnumerableExtensions_ElseEmpty_Tests

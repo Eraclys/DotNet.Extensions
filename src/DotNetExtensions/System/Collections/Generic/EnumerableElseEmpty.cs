@@ -2,7 +2,7 @@
 using System.Linq;
 using JetBrains.Annotations;
 
-namespace DotNetExtensions
+namespace DotNetExtensions.System.Collections.Generic
 {
     public static class EnumerableElseEmpty
     {

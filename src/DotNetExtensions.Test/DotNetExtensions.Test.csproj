@@ -61,13 +61,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnumerableExtensions_ConcatOne_Tests.cs" />
-    <Compile Include="EnumerableExtensions_ElseEmpty_Tests.cs" />
-    <Compile Include="EnumerableExtensions_ForEach_Tests.cs" />
-    <Compile Include="EnumerableExtensions_Shuffle_Tests.cs" />
-    <Compile Include="NullExtensions_Else_Tests.cs" />
-    <Compile Include="NullExtensions_IfNotNullThenDo_Tests.cs" />
-    <Compile Include="NullExtensions_IfNotNull_Tests.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableExtensions_ConcatOne_Tests.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableExtensions_ElseEmpty_Tests.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableExtensions_ForEach_Tests.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableExtensions_Shuffle_Tests.cs" />
+    <Compile Include="System\NullExtensions_Else_Tests.cs" />
+    <Compile Include="System\NullExtensions_IfNotNullThenDo_Tests.cs" />
+    <Compile Include="System\NullExtensions_IfNotNull_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

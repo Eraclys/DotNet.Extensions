@@ -1,4 +1,4 @@
-﻿namespace DotNetExtensions
+﻿namespace DotNetExtensions.System
 {
     public interface IRandomGenerator
     {

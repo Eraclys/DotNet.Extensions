@@ -1,8 +1,7 @@
-﻿using System;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
 
-namespace DotNetExtensions.Test
+namespace DotNetExtensions.Test.System
 {
     [TestFixture]
     internal sealed class NullExtensions_Else_Tests

@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace DotNetExtensions.Test
+namespace DotNetExtensions.Test.System
 {
     [TestFixture]
     internal sealed class NullExtensions_IfNotNull_Tests

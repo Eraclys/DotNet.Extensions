@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 
 namespace DotNetExtensions
 {
-    public static class NullObjectExtensions
+    public static class NullExtensions
     {
         public static void IfNotNullThenDo<TObject>([CanBeNull] this TObject value, [NotNull] Action<TObject> action)
             where TObject : class
