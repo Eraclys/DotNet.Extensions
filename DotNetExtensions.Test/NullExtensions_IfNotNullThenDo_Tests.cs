@@ -16,12 +16,16 @@ namespace DotNetExtensions.Test
             callCount.Should().Be(0);
         }
 
-        [Test]
-        public void GivenANonNullObject_ShouldCallAction()
+        [FsCheck.NUnit.Property]
+        public void GivenANonNullObject_ShouldCallAction(object @object)
         {
+            if (@object == null)
+            {
+                return;
+            }
+
             var callCount = 0;
 
-            var @object = new object();
             object value = null;
 
             @object.IfNotNullThenDo(v =>

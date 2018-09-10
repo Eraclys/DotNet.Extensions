@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumerableExtensions_ForEach_Tests.cs" />
     <Compile Include="EnumerableExtensions_Shuffle_Tests.cs" />
     <Compile Include="NullExtensions_Else_Tests.cs" />
     <Compile Include="NullExtensions_IfNotNullThenDo_Tests.cs" />
