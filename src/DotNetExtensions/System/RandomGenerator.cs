@@ -26,7 +26,7 @@ namespace DotNetExtensions
 
         public int Next(int minValue, int maxValue)
         {
-            throw new NotImplementedException();
+            return _inner.Next(minValue, maxValue);
         }
 
         public int Next(int maxValue)
