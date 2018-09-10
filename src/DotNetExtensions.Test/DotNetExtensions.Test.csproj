@@ -61,7 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_ConcatOne_Tests.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableExtensions_Concat_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ElseEmpty_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ForEach_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_Shuffle_Tests.cs" />
