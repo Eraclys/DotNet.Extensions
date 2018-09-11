@@ -11,9 +11,11 @@ namespace DotNetExtensions.Test.System.Collections.Generic
     internal sealed class EnumerableExtensions_Concat_Tests
     {
         [FsCheck.NUnit.Property]
-        public void GivenNull_Append_ShouldThrowException(object concatValue)
+        public void GivenNull_Append_ShouldReturnArrayWithConcatenatedItem(object concatValue)
         {
-            Assert.Throws<ArgumentNullException>(() => { ((IEnumerable<object>) null).Append(concatValue).ToList(); });
+            var result = ((IEnumerable<object>)null).Append(concatValue);
+
+            result.Should().BeEquivalentTo(new[] { concatValue });
         }
 
         [FsCheck.NUnit.Property]
@@ -32,7 +34,9 @@ namespace DotNetExtensions.Test.System.Collections.Generic
         [FsCheck.NUnit.Property]
         public void GivenNull_Prepend_ShouldThrowException(object concatValue)
         {
-            Assert.Throws<ArgumentNullException>(() => { ((IEnumerable<object>)null).Prepend(concatValue).ToList(); });
+            var result = ((IEnumerable<object>)null).Prepend(concatValue);
+
+            result.Should().BeEquivalentTo(new[] { concatValue });
         }
 
         [FsCheck.NUnit.Property]

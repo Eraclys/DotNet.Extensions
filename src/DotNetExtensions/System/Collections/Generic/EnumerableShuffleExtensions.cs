@@ -9,14 +9,14 @@ namespace DotNetExtensions.System.Collections.Generic
         /// <summary>
         ///  Fisher-Yates shuffle
         /// </summary>
-        [CanBeNull]
+        [NotNull]
         public static T[] Shuffle<T>(
             [CanBeNull] this IEnumerable<T> items,
             [CanBeNull] IRandomGenerator randomGenerator = null)
         {
             if (items == null)
             {
-                return null;
+                return new T[0];
             }
 
             var provider = randomGenerator ?? RandomGenerator.Default;
