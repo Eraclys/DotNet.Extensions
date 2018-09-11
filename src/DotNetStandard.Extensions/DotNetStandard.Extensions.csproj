@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <PackageId>DotNetStandard.Extensions</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageTags>c# .net DotNetStandard extensions extension functional fluent</PackageTags>
+    <Description>A bunch of useful extensions for fluent style programming.</Description>
+    <RepositoryUrl>https://github.com/Eraclys/DotNetStandard.Extensions/</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/Eraclys/DotNetStandard.Extensions/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Eraclys/DotNetStandard.Extensions/</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
+  </ItemGroup>
+
+</Project>
