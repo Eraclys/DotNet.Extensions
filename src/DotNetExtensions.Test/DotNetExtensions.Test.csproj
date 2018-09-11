@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="System\Collections\Generic\EnumerableExtensions_Concat_Tests.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableExtensions_ConvertToList_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ElseEmpty_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ForEach_Tests.cs" />
     <Compile Include="System\Collections\Generic\EnumerableExtensions_ToHashSet_Tests.cs" />
