@@ -12,6 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="System.IComparable[T]\IComparable[T].WithMinValueOf.cs" />
+    <None Include="System.String\String.IsNullOrWhiteSpace.cs" />
+    <None Include="System.String\String.ToSignedByte.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
   </ItemGroup>
 

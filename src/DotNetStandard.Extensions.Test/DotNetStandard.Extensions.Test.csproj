@@ -61,18 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_Concat_Tests.cs" />
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_ConvertToList_Tests.cs" />
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_ElseEmpty_Tests.cs" />
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_ForEach_Tests.cs" />
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_ToHashSet_Tests.cs" />
-    <Compile Include="System\ComparableExtensions_WithMaxValueOf_Tests.cs" />
-    <Compile Include="System\ComparableExtensions_WithMinValueOf_Tests.cs" />
-    <Compile Include="System\ObjectExtensions_In_Tests.cs" />
-    <Compile Include="System\Collections\Generic\EnumerableExtensions_Shuffle_Tests.cs" />
-    <Compile Include="System\NullExtensions_Else_Tests.cs" />
-    <Compile Include="System\NullExtensions_IfNotNullThenDo_Tests.cs" />
-    <Compile Include="System\NullExtensions_IfNotNull_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Append_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ConvertToList_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ElseEmpty_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ForEach_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ToHashSet_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Prepend_Tests.cs" />
+    <Compile Include="System.IComparable[T]\IComparable[T].WithMaxValueOf_Tests.cs" />
+    <Compile Include="System.Nullable[T]\Nullable[T].Else_Tests.cs" />
+    <Compile Include="System.Nullable[T]\Nullable[T].IfHasValueThenDo_Tests.cs" />
+    <Compile Include="System.Nullable[T]\Nullable[T].IfNotNull_Tests.cs" />
+    <Compile Include="System.Object\TClass.Else_Tests.cs" />
+    <Compile Include="System.Object\TClass.IfNotNullThenDo_Tests.cs" />
+    <Compile Include="System.Object\TClass.IfNotNull_Tests.cs" />
+    <Compile Include="System.IComparable[T]\IComparable[T].WithMinValueOf_Tests.cs" />
+    <Compile Include="System.Object\Object.In_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Shuffle_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
