@@ -80,6 +80,7 @@
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Shuffle_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System.Object\TClass.IsNull_Tests.cs" />
+    <Compile Include="System.T[]\T[].Slice_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
