@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
+using FsCheck;
 using NUnit.Framework;
 // ReSharper disable CheckNamespace
 
@@ -19,12 +20,9 @@ namespace DotNetStandard.Extensions.Test
         }
 
         [FsCheck.NUnit.Property]
-        public void GivenNonList_ShouldReturnNewList(Dictionary<int, string> items)
+        public void GivenNonList_ShouldReturnNewList(NonNull<Dictionary<int, string>> notNullitems)
         {
-            if (items == null)
-            {
-                return;
-            }
+            var items = notNullitems.Item;
 
             var result = items.ConvertToList();
 
@@ -33,12 +31,9 @@ namespace DotNetStandard.Extensions.Test
         }
 
         [FsCheck.NUnit.Property]
-        public void GivenList_ShouldReturnSameReference(List<int> items)
+        public void GivenList_ShouldReturnSameReference(NonNull<List<int>> notNullitems)
         {
-            if (items == null)
-            {
-                return;
-            }
+            var items = notNullitems.Item;
 
             var result = items.ConvertToList();
 

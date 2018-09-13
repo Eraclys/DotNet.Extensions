@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using FsCheck;
 using NUnit.Framework;
 // ReSharper disable CheckNamespace
 
@@ -18,13 +19,9 @@ namespace DotNetStandard.Extensions.Test
         }
 
         [FsCheck.NUnit.Property]
-        public void GivenANonNull_ShouldCallAction(object @object)
+        public void GivenANonNull_ShouldCallAction(NonNull<object> nonNullObject)
         {
-            if (@object == null)
-            {
-                return;
-            }
-
+            var @object = nonNullObject.Item;
             var callCount = 0;
 
             object value = null;

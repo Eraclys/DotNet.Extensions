@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
+using FsCheck;
 using NUnit.Framework;
 // ReSharper disable CheckNamespace
 
@@ -18,12 +19,9 @@ namespace DotNetStandard.Extensions.Test
         }
 
         [FsCheck.NUnit.Property]
-        public void GivenNonNull_ShouldReturnOriginal(List<int> items)
+        public void GivenNonNull_ShouldReturnOriginal(NonNull<List<int>> notNullitems)
         {
-            if (items == null)
-            {
-                return;
-            }
+            var items = notNullitems.Item;
 
             var result = items.ElseEmpty();
 

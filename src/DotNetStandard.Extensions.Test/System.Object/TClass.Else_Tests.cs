@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using FsCheck;
 using NUnit.Framework;
 // ReSharper disable CheckNamespace
 
@@ -15,12 +16,9 @@ namespace DotNetStandard.Extensions.Test
         }
 
         [FsCheck.NUnit.Property]
-        public void GivenANonNull_ShouldReturnOriginal(object originalValue, object alternative)
+        public void GivenANonNull_ShouldReturnOriginal(NonNull<object> nonNullOriginalValue, object alternative)
         {
-            if (originalValue == null)
-            {
-                return;
-            }
+            var originalValue = nonNullOriginalValue.Item;
 
             originalValue.Else(alternative).Should().Be(originalValue);
             originalValue.Else(() => alternative).Should().Be(originalValue);

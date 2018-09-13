@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
+using FsCheck;
 using NUnit.Framework;
 // ReSharper disable CheckNamespace
 
@@ -18,12 +19,9 @@ namespace DotNetStandard.Extensions.Test
         }
 
         [FsCheck.NUnit.Property]
-        public void GivenNonNull_ShouldReturnOriginalPlusItemAtTheBeginningOfTheCollection(List<object> items, object item)
+        public void GivenNonNull_ShouldReturnOriginalPlusItemAtTheBeginningOfTheCollection(NonNull<List<object>> nonNullItems, object item)
         {
-            if (items == null)
-            {
-                return;
-            }
+            var items = nonNullItems.Item;
 
             var result = items.Prepend(item);
 
