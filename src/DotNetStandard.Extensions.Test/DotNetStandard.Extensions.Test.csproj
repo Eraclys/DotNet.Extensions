@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="System.Collections.Generic.IDictionary[Tkey,TValue]\IDictionary[TKey,TValue].AddOrUpdate_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IDictionary[Tkey,TValue]\IDictionary[TKey,TValue].GetValueOrAdd_Tests.cs" />
     <Compile Include="System.Collections.Generic.IDictionary[Tkey,TValue]\IDictionary[TKey,TValue].GetValueOrDefault_Tests.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Append_Tests.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ConvertToList_Tests.cs" />
