@@ -1,6 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 
+// ReSharper disable CheckNamespace
 namespace DotNetStandard.Extensions
 {
     public static partial class ArrayExtensions

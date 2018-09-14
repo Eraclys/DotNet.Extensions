@@ -20,20 +20,9 @@ namespace DotNetStandard.Extensions
                 return new T[0];
             }
 
-            var provider = randomGenerator ?? RandomGenerator.Default;
-
             var newArray = items.ToArray();
-            var n = newArray.Length;
 
-            while (n > 1)
-            {
-                n--;
-                var k = provider.Next(n + 1);
-                var value = newArray[k];
-
-                newArray[k] = newArray[n];
-                newArray[n] = value;
-            }
+            newArray.ShuffleInPlace(randomGenerator);
 
             return newArray;
         }

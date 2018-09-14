@@ -13,7 +13,7 @@ namespace DotNetStandard.Extensions.Test
         [Test]
         public void GivenANullCollection_ShouldReturnAnEmptyArray()
         {
-            var shuffled = ((List<int>)null).Shuffle();
+            var shuffled = ((IEnumerable<int>)null).Shuffle();
 
             shuffled.Should().BeEmpty();
         }

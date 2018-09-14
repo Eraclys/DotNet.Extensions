@@ -71,6 +71,7 @@
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Mean_Tests.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ToHashSet_Tests.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Prepend_Tests.cs" />
+    <Compile Include="System.Collections.Generic.IList[T]\IList[T].ShuffleInPlace_Tests.cs" />
     <Compile Include="System.IComparable[T]\IComparable[T].WithMaxValueOf_Tests.cs" />
     <Compile Include="System.Nullable[T]\Nullable[T].Else_Tests.cs" />
     <Compile Include="System.Nullable[T]\Nullable[T].IfHasValueThenDo_Tests.cs" />
