@@ -1,6 +1,5 @@
 ﻿using System;
 using FluentAssertions;
-using FsCheck;
 using NUnit.Framework;
 // ReSharper disable CheckNamespace
 

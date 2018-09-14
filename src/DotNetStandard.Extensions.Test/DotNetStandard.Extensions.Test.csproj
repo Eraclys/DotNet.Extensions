@@ -76,6 +76,7 @@
     <Compile Include="System.Nullable[T]\Nullable[T].IfNotNull_Tests.cs" />
     <Compile Include="System.Nullable[T]\Nullable[T].IsNull_Tests.cs" />
     <Compile Include="System.Object\Object.IsDefault_Tests.cs" />
+    <Compile Include="System.Object\Object.Is_Tests.cs" />
     <Compile Include="System.Object\TClass.Else_Tests.cs" />
     <Compile Include="System.Object\TClass.IfNotNullThenDo_Tests.cs" />
     <Compile Include="System.Object\TClass.IfNotNull_Tests.cs" />
