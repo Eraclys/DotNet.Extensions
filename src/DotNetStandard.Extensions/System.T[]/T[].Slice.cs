@@ -6,16 +6,16 @@ namespace DotNetStandard.Extensions
     public static partial class ArrayExtensions
     {
         [NotNull]
-        public static T[] Slice<T>([CanBeNull] this T[] items, int fromIndex, int toIndex = int.MaxValue)
+        public static T[] Slice<T>([CanBeNull] this T[] items, int startIndex, int endIndex = int.MaxValue)
         {
-            if (fromIndex < 0)
+            if (startIndex < 0)
             {
-                throw new ArgumentException("fromIndex must be positive", nameof(fromIndex));
+                throw new ArgumentException("startIndex must be positive", nameof(startIndex));
             }
 
-            if (fromIndex > toIndex)
+            if (startIndex > endIndex)
             {
-                throw new ArgumentException("fromIndex is greater than to Index", nameof(fromIndex));
+                throw new ArgumentException("startIndex is greater than endIndex", nameof(startIndex));
             }
 
             if (items == null)
@@ -23,11 +23,11 @@ namespace DotNetStandard.Extensions
                 return new T[0];
             }
 
-            toIndex = toIndex.WithMaxValueOf(items.Length);
-            var length = toIndex - fromIndex;
+            endIndex = endIndex.WithMaxValueOf(items.Length);
+            var length = endIndex - startIndex;
             var result = new T[length];
 
-            Array.Copy(items, fromIndex, result, 0, length);
+            Array.Copy(items, startIndex, result, 0, length);
 
             return result;
         }
