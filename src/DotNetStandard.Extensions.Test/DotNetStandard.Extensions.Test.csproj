@@ -74,6 +74,7 @@
     <Compile Include="System.Nullable[T]\Nullable[T].Else_Tests.cs" />
     <Compile Include="System.Nullable[T]\Nullable[T].IfHasValueThenDo_Tests.cs" />
     <Compile Include="System.Nullable[T]\Nullable[T].IfNotNull_Tests.cs" />
+    <Compile Include="System.Nullable[T]\Nullable[T].IsNotNull_Tests.cs" />
     <Compile Include="System.Nullable[T]\Nullable[T].IsNull_Tests.cs" />
     <Compile Include="System.Object\Object.IsDefault_Tests.cs" />
     <Compile Include="System.Object\Object.Is_Tests.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="System.Object\Object.In_Tests.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].Shuffle_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Object\TClass.IsNotNull_Tests.cs" />
     <Compile Include="System.Object\TClass.IsNull_Tests.cs" />
     <Compile Include="System.T[]\T[].Slice_Tests.cs" />
   </ItemGroup>
